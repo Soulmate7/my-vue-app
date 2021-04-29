@@ -2,6 +2,7 @@
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
   <HelloWorld msg="This is a test from zr!" />
+  <HelloWorld msg="test2" />
 </template>
 
 <script setup>
