@@ -1,17 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
-  <HelloWorld msg="This is a test from zr!" />
-  <HelloWorld msg="test2" />
+  <!--HelloWorld msg="Hello Vue 3 + Vite" /-->
+  <BarChart />
 </template>
 
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import {defineComponent} from "vue";
+<script>
+import BarChart from "./components/BarChart.vue";
 
-export default defineComponent({
-  components: { Datachart },
-});
+export default {
+  name:"App",
+  components:{
+    BarChart,
+  },
+};
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>

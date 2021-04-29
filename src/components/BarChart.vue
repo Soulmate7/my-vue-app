@@ -1,29 +1,29 @@
 <template>
     <h2>直方图</h2>
+    <div id="bar-chart-container"></div>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
 import axios from "axios";
 import * as d3 from "d3";
-
-export default defineComponent({
-    data() {
+export default{
+    data(){
         return {
-            color:"gray",
-            margin:{top:30,right:0,bottom:30,left:40},
+            color:"steelblue",
+            margin: { top: 30, right: 0, bottom: 30, left: 40 },
         };
     },
-    /**
+     /**
      * 在挂载后即开始执行
      */
-    mounted() {
+    mounted(){
         axios.get("./test.json").then((res) =>{
-            const barChartData=Object.assign(this.formatData(res.data),{
+            console.log(res.data);
+            const barChartdata=Object.assign(this.formatData(res.data),{
                 format:"%",
                 y:"↑ Frequency",
             });
-            this.drawBarChart(barChartData);
+            this.drawBarChart(barChartdata);
         });
     },
     methods: {
@@ -116,5 +116,7 @@ export default defineComponent({
       svg.append("g").call(yAxis);
     },
   },
-});
+};
+
+
 </script>
