@@ -1,6 +1,11 @@
 <template>
-    <h2>直方图</h2>
-    <div id="bar-chart-container"></div>
+    <h2>201811153031 曾锐</h2>
+    <div id="bar-chart-container">
+      <p v-for="(char, i) in alphabet" :key="i">
+        <span>{{ char.letter }}</span>
+        <span>{{ char.frequency }}</span>
+      </p>
+    </div>
 </template>
 
 <script>
@@ -9,6 +14,7 @@ import * as d3 from "d3";
 export default{
     data(){
         return {
+            alphabet: [],
             color:"steelblue",
             margin: { top: 30, right: 0, bottom: 30, left: 40 },
         };
@@ -19,6 +25,7 @@ export default{
     mounted(){
         axios.get("./test.json").then((res) =>{
             console.log(res.data);
+            this.alphabet=res.data;
             const barChartdata=Object.assign(this.formatData(res.data),{
                 format:"%",
                 y:"↑ Frequency",

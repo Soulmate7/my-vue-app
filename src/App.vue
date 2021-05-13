@@ -6,11 +6,12 @@
 
 <script>
 import BarChart from "./components/BarChart.vue";
-
+import TestAxios from "./components/TestAxios.vue";
 export default {
   name:"App",
   components:{
     BarChart,
+    TestAxios,
   },
 };
 // This starter template is using Vue 3 experimental <script setup> SFCs
