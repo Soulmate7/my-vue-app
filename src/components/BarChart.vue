@@ -1,5 +1,5 @@
 <template>
-    <h2>201811153031 曾锐</h2>
+    <h2>Hello Vue</h2>
     <div id="bar-chart-container">
       <p v-for="(char, i) in alphabet" :key="i">
         <span>{{ char.letter }}</span>
