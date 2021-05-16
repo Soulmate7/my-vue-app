@@ -2,7 +2,15 @@
 
 > 本项目用于入门学习Vue和Vite的搭建，同时使用D3实现数据可视化。
 
-[TOC]
+## 目录
+- [准备阶段](#准备阶段)
+  - [Node.js](#Node.js)
+  - [yarn](#yarn)
+  - [git](#git)
+- [Vite站](#Vite站)
+- [Vue+D3可视化](#Vue+D3可视化)
+- [效果](#效果)
+- [参考资料](#参考资料)
 
 ## 准备阶段
 
@@ -12,7 +20,7 @@
 
 > 简单来说，Node.js就是一个运行在服务端的JavaScript
 
-下载地址：http://nodejs.cn/download/
+[Node下载地址](http://nodejs.cn/download/)
 下载并安装好之后，可以打开终端，输入命令查看是否安装成功
 
 ``` bash
@@ -336,6 +344,6 @@ drawBarChart(data) {
 到此，基于Vue和Vite的D3数据可视化入门学习就结束了，初探之后，还有很多知识技术待我们去探索，加油吧。
 
 ## 参考资料
-https://www.yunyoujun.cn/posts/vue-d3-demo/
-https://www.runoob.com/vue2/vue-directory-structure.html
-https://cn.vuejs.org/v2/guide/installation.html
+[从 Vite 与 Vue 开始的 D3 数据可视化之旅](https://www.yunyoujun.cn/posts/vue-d3-demo/)
+[Vue.js 目录结构](https://www.runoob.com/vue2/vue-directory-structure.html)
+[vue.js](https://cn.vuejs.org/v2/guide/installation.html)
