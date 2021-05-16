@@ -345,5 +345,7 @@ drawBarChart(data) {
 
 ## 参考资料
 [从 Vite 与 Vue 开始的 D3 数据可视化之旅](https://www.yunyoujun.cn/posts/vue-d3-demo/)
+
 [Vue.js 目录结构](https://www.runoob.com/vue2/vue-directory-structure.html)
+
 [vue.js](https://cn.vuejs.org/v2/guide/installation.html)
